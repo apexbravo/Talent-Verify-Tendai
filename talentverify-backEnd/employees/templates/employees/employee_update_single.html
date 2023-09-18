@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Update Employee Information</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="company">Company:</label>
+        <select name="company" id="company">
+            {% for company in companies %}
+                <option value="{{ company.id }}" {% if company.id == form.instance.company_id %}selected{% endif %}>{{ company.name }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        {{ form.as_p }}
+        <button type="submit">Update</button>
+    </form>
+{% endblock %}

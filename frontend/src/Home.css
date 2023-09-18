@@ -1,0 +1,19 @@
+.home-container {
+  background-image: url('/public/Images/image.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.jumbotron {
+
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: auto;
+  /* Adjust as needed */
+}
+
+.textitem {
+  margin-top: 10rem;
+}
