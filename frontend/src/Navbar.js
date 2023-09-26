@@ -18,7 +18,7 @@ const AppNavbar = () => {
               Home
             </Nav.Link>
             <Nav.Link as={NavLink} to="/ImportEmployees" activeClassName="active">
-              Import Employees
+              Import Employee
             </Nav.Link>
             <Nav.Link as={NavLink} to="/AddEmployeeForm" activeClassName="active">
               Add Manually Employees

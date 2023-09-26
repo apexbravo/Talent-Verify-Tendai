@@ -23,7 +23,7 @@ function AddEmployeeForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/employees/add/', formData);
+      const response = await axios.post('http://127.0.0.1:8000/api/employees/', formData);
       console.log('Employee added successfully:', response.data);
       navigate('/EmployeeList');
       // Redirect or perform any necessary actions after a successful submission.
